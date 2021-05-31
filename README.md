@@ -1,5 +1,5 @@
-# doodleblue
-Sample e-commerce project - doodleblue
+# Sample e-commerce project - doodleblue
+
 This project is sample e-commerce application which includes the following functionalities.
 
 1.User signup
