@@ -8,11 +8,14 @@ const dbConfig = require('./config/database.config.js');
 const UserRoutes = require('./routes/user')
 const ProductRoutes = require('./routes/product');
 const OrderRoutes = require('./routes/orderdetails');
+const fileupload = require('express-fileupload')
+
+
 dotenv.config();
 
 mongoose.Promise = global.Promise;
 const app = express();
-
+app.use(fileupload());
 mongoose.connect(dbConfig.url,
      {
     useNewUrlParser: true
